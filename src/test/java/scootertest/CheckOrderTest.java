@@ -18,7 +18,7 @@ public class CheckOrderTest {
     @Before
     public void setIp(){
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://qa-scooter.praktikum-services.ru/");
     }
@@ -40,8 +40,8 @@ public class CheckOrderTest {
 
 
     }
-    @After
-    public void tearDown(){
-        driver.quit();
-    }
+    //@After
+    //public void tearDown(){
+       // driver.quit();
+   // }
 }
